@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/add_article.css" />
+    <title>Add Article</title>
+  </head>
+  <body>
+    <h2>Add Article</h2>
+    <form action="scripts/add_article.php" method="post">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required />
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" required></textarea>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author" required />
+      <input type="submit" value="Add Article" />
+    </form>
+  </body>
+</html>

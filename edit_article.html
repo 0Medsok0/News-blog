@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Блог/css/edit_article.css" />
+    <title>Edit Article</title>
+  </head>
+  <body>
+    <h2>Edit Article</h2>
+    <form action="scripts/edit_article.php" method="post">
+      <!-- <input
+        type="hidden"
+        id="id"
+        name="id"
+        value="<?php echo $id; ?>"
+      /> -->
+      <label for="title">Title:</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        value="<?php echo $title; ?>"
+        required
+      />
+      <label for="content">Content:</label>
+      <textarea id="content" name="content" required>
+<?php echo $content; ?></textarea
+      >
+      <input type="submit" value="Save Changes" />
+    </form>
+  </body>
+</html>
