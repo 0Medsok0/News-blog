@@ -1,8 +1,8 @@
 <?php
 // config.php
 $servername = "localhost";
-$username = "root";
-$password = "3004";
+$username = "user";
+$password = "pass";
 $dbname = "blog";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
